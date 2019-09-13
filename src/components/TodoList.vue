@@ -15,10 +15,6 @@ export default {
   components: {
     Todo
   },
-  updated () {
-    console.log(this.todos)
-    console.log('rendered')
-  },
   methods: {
     async deleteTodo (todo) {
       const willDelete = await sweetalert({
